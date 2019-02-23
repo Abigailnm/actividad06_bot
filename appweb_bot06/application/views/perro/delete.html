@@ -1,0 +1,19 @@
+$def with(datos)
+<a href="/"> <h1>Borrar perro</h1> </a>
+
+
+<form method="POST">
+    <label for="numero">N&uacute;mero</label>
+    <input type="text" readonly="true" value="$datos.numero" id="numero" name="numero">
+    <br>
+    <label for="nombre">Nombre</label>
+    <input type="text" readonly="true" value="$datos.nombre" id="nombre" name="nombre">
+    <br>
+    <label for="pais">Pa&iacute;s</label>
+    <input type="text" readonly="true" value="$datos.pais" id="pais" name="pais">
+    <br>
+    <label for="caracteristicas">caracteristicas</label>
+    <input type="text" readonly="true" value="$datos.caracteristicas" id="caracteristicas" name="caracteristicas">
+    <br>
+    <button type="submit" class="btn btn-primary">Borrar</button>
+</form>

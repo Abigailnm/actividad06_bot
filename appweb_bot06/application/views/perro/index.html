@@ -1,0 +1,20 @@
+$def with(datos)
+
+<h1>Base de Datos perro</h1>
+<a href="/insert">Insertar</a>
+
+<table>
+    <th>N&uacute;mero</th>
+    <th>Nombre</th>
+    <th>Pa&iacute;s</th>
+    <th>caracteristicas</th>
+    $for row in datos:
+        <tr>
+            <td> <a href="/view/$row.numero">$row.numero</a> </td>
+            <td> <a>$row.nombre</a> </td>
+            <td> <a>$row.pais</a> </td>
+            <td> <a>$row.caracteristicas</a> </td>
+            <td> <a href="/delete/$row.numero">Borrar</a> </td>
+            <td> <a href="/update/$row.numero">Actualizar</a> </td>
+        </tr>
+</table>
